@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Callback
+        </title>
+    </head>
+    <body>
+        <h1>Callback function Example</h1>
+        <h1>Asynchronous in javascript Example </h1>
+        <h2>Set time out is an example of asynchronous function</h2>
+        <script>
+            const perOne = (Friend, callFriend) => {
+                console.log(`i am busy right now. I am talking to ${Friend}. I will call you back.`);
+                callFriend();
+            }
+            const perTwo = () => {
+                console.log(`Hey whats up i call back you`);
+            }
+            perOne("Gaurav", perTwo);
+        </script>
+    </body>
+</html>
